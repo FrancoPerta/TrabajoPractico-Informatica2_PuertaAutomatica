@@ -2,7 +2,7 @@
 
 ## Memoria descriptiva
 
-Mi sistema representa una puerta automática con sensor de movimiento. La puerta es corrediza y funciona mediante un motor. Cualquier movimiento delante de la puerta será leido por un único sensor. La puerta se mantiene cerrada, y cuando el sensor detecta algún movimiento se abre automaticamente.
+Mi sistema representa una puerta automática con sensores de movimiento. La puerta es corrediza y funciona mediante un motor. Cualquier movimiento delante de la puerta será leido por dos sensores ubicados a ambos lados de la puerta. Esta se mantiene cerrada, y cuando uno de los sensores detecta algún movimiento se abre automaticamente. Además, hay un timer configurable para que la puerta pueda mantenerse abierta unos segundos despues de que los sensores dejen de detectar movimiento. 
 
 ## Máquina de estado de puerta automática
 
