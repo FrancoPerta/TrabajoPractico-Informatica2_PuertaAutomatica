@@ -38,3 +38,52 @@ estados_t f_close (datos_t);
 estados_t f_open (datos_t);
 
 # endif
+
+```
+
+- Archivo __main.c__
+> con Switch case
+
+```c
+#include "mylib.h"
+int main() {
+    datos_t config;
+    estados_t estado = close;
+    
+    config = inicio();
+    while(1){
+      switch (estado) {
+        case close: estado = f_close(config);
+                     break;
+        case open: estado = f_open(config);
+                       break;
+      }
+    }
+  return 0;
+}
+
+```
+
+> Con Punteros a funciones
+
+ ```c
+ #include "mylib.h"
+ int main() {
+     datos_t config;
+     estados_t estado = close;
+     estados_t (*fsm[])(datos_t) = {f_close, f_open}
+     config = inicio();
+     while(1) estado = (*fsm[estado])(config);
+   return 0;
+ }
+ 
+ ```
+ 
+ - Archivo __config.conf__
+
+```bash
+# Cantidad de segundos que se mantiene la puerta abierta sin detectar movimiento
+t_set 3
+
+```
+
