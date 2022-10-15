@@ -42,10 +42,11 @@ estados_t f_open (datos_t);
 ```
 
 - Archivo __main.c__
-> con Switch case
+> con switch case
 
 ```c
 #include "mylib.h"
+
 int main() {
     datos_t config;
     estados_t estado = close;
@@ -64,10 +65,11 @@ int main() {
 
 ```
 
-> Con Punteros a funciones
+> Con punteros a funciones
 
  ```c
  #include "mylib.h"
+ 
  int main() {
      datos_t config;
      estados_t estado = close;
