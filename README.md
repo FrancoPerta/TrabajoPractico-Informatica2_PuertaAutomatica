@@ -22,4 +22,19 @@ Mi sistema representa una puerta automática con sensores de movimiento. La puer
 # define MY_LIB
 # include <stdio.h>
 
+typedef enum {
+  close = 0;
+  open = 1;
+} estados_t;
+
+typedef struct {
+  char s;               // detección de movimiento en el sensor
+  char t;               // segundos marcados en el timer
+  char t_set;           // segundos que se mantiene la puerta abierta
+} datos_t;
+
+datos_t f_inicio (void);
+estados_t f_close (datos_t);
+estados_t f_open (datos_t);
+
 # endif
