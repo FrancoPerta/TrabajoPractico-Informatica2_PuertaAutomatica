@@ -7,6 +7,7 @@ Mi sistema representa una puerta automática con sensores de movimiento. La puer
 ## Máquina de estado de puerta automática
 
 ![captura de maquina de estado](https://user-images.githubusercontent.com/82234887/190162330-6e75c734-db36-4e67-b744-83177bda12d3.PNG)
+![image](https://user-images.githubusercontent.com/82234887/196004130-7c45d14b-b9ec-4e6b-8281-89f65daefe8c.png)
 
 - __SET__: Bandera de fin de inicialización
 - __s__: Detector de movimiento en el sensor
