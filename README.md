@@ -13,4 +13,13 @@ Mi sistema representa una puerta automática con sensores de movimiento. La puer
 - __t__: Timer
 - __t_set__: Segundos que se mantiene la puerta abierta
 
+## Código
 
+- Archivo de cabecera __mylib.h__
+
+```c
+# ifndef MY_LIB
+# define MY_LIB
+# include <stdio.h>
+
+# endif
