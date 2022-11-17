@@ -89,3 +89,31 @@ t_set 3
 
 ```
 
+- Funciones de estado
+
+```c
+estados_t f_close(datos_t){
+    datos_t;
+    if(s = 0 && t > t_set){
+        estado = close;
+    }
+    else{
+         estado = open;
+    }
+  return estado;
+}
+
+estados_t f_open(datos_t){
+    datos_t;
+    if(s = 1){
+        estado = open;
+    }
+    else{
+         estado = close
+    }
+  return estado;
+}
+
+```
+
+
